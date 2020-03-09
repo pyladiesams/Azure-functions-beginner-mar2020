@@ -15,7 +15,7 @@ I'm gonna show you how you can deploy your app using the Azure UI and from your 
 From the Azure portal, click on Create a Resource and create a new Function App:
 
 <p>
-<img src="../images/deploy.png" align="center" height="50%" width="50%" />
+<img src="images/deploy.png" align="center"/>
 </p>
 
 Choose a unique name, select Linux as OS, choose to publish Code, and select Python as the Runtime Stack. 
@@ -41,7 +41,7 @@ To make sure everything works as expected, open Postman again and just replace t
 (with the code parameter, otherwise you’ll get an Unauthorized Access error).
 
 <p>
-<img src="../images/deploy_req.png" align="center" height="50%" width="50%" />
+<img src="images/deploy_req.png" align="center"/>
 </p>
 
 Now we can use this Python function anywhere!
@@ -88,7 +88,7 @@ and confirming that the JSON output is being correctly produced.
 To troubleshoot your app go to the Monitoring section in the Azure portal.
 
 <p>
-<img src="../images/postman.png" align="center" height="50%" width="50%" />
+<img src="images/postman.png" align="center"/>
 </p>
 
 ## Cleaning up
