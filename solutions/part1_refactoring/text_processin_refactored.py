@@ -138,7 +138,7 @@ def remove_punctuation(words):
 
 def replace_numbers(words):
     """
-    Replace all interger occurrences in list of tokenized words with textual representation.
+    Replace all integer occurrences in list of tokenized words with textual representation.
 
     Args:
         words (list): List of tokenized words.

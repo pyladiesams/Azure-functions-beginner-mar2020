@@ -1,6 +1,6 @@
 ### Step 3: Modify the basic Azure Function.
 
-In this step we'll learn how we can modify our basic Azure Function using the code we prepared in [step1_refactoring(). Since there is more than one way to 
+In this step we'll learn how we can modify our basic Azure Function using the code we prepared in [step1_refactoring](). Since there is more than one way to 
 correctly refactor code I prepared a simple Python function in the shared_code directory we can all use.
 
 As a challenge after finishing this step, try to deploy more functions we created in the refactoring step and create tests.
@@ -23,8 +23,14 @@ pip freeze > requirements.txt
 
 to keep a record of the libraries you’ve installed in this environment. This is the file that we will use when we publish our Functions project.
 
-The [shared_code directory]() contains functions that preform 
-simple Natural Language Processing, which we gonna use in our `response_text_processing` function.
+The [shared_code directory]() contains functions that preform simple Natural Language Processing, which we gonna use in our `response_text_processing` function.
+
+Move the [shared_code directory]() to your FunctionPythonHTTPExample folder.
+
+```bash
+cd ~/Azure-functions-beginner-mar2020/workshop/part2_azure_functions
+mv shared_code FunctionPythonHTTPExample
+```
 
 Edit the `__init.py__`:
 
@@ -34,7 +40,7 @@ import json
 
 import azure.functions as func
 
-from ...shared_code import text_processing as tp
+from ..shared_code import nlp_text_processing as tp
 
 
 def main(req: func.HttpRequest) -> func.HttpResponse:
@@ -45,8 +51,9 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 
     try:
         file_sent = req.get_body()
-    except ValueError:
-        pass
+    except ValueError as e:
+        logging.error("Value Error: ", e)
+        raise ValueError
     else:
         text = str(file_sent)
 
@@ -68,18 +75,20 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
             "Please pass a file in the request body",
             status_code=400
         )
+
+```
+Run the edited Python function, using the `func host` command from the `part2_azure_functions` directory:
+
+```bash
+# Run the functions locally:
+cd ~/Azure-functions-beginner-mar2020/workshop/part2_azure_functions/FunctionPythonHTTPExample
+func host start
 ```
 
-Then go to Postman and make the following POST reguest using the [data_sample]() file:
+Then go to Postman and make the following POST request using the [data_sample]() file:
 
 <p>
-<img src="../images/postman_request.png" align="center" height="50%" width="50%" />
-</p>
-
-The response you get should look like this:
-
-<p>
-<img src="../images/postman_request.png" align="center" height="50%" width="50%" />
+<img src="../images/postman.png" align="center" height="50%" width="50%" />
 </p>
 
 In the response the stopwords should have been removed, then the text should have been tagged and finally there should be a few recognized entities.

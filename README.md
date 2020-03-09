@@ -23,7 +23,7 @@ Azure Functions supports Python 3.6.x or higher.
 If you have a lower version, you have to update it.
 To install Python you need to download an installer:
 * Windows(https://www.python.org/downloads/windows/)
-* Linux, Mac already has to have Python3, if you're not sure, type in command line
+* Linux, Mac already has to have Python3, if you're not sure, type in command line:
 `python --version` or `python3 --version`
 and version will be in a first line. If you don't have proper version of python:
 * Mac (you have to have [brew](https://brew.sh)): ``` brew install python3```
@@ -62,11 +62,11 @@ Follow the instructions [here](https://docs.microsoft.com/en-us/cli/azure/instal
 
 
 ## Requirements
-* Python 3
+* Python 3.6.x or higher.
 
 ## Usage
 * Clone the repository.
-* Go to /workshop and start with README.md.
+* Go to [workshop]() and start with the README.md.
 
 ## Credits
 This workshop was set up by [@PyLadiesAMS](https://www.meetup.com/PyLadiesAMS/) and [Dana Arsovska](https://github.com/Dzvezdana).

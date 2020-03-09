@@ -13,3 +13,26 @@ Try to:
 * Check if the code is testable
 * Make to code more robust
 * Make the code more reusable
+
+
+#### Let's create a virtual environment.
+In your terminal run:
+
+Mac & Ubuntu:
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+Windows:
+ADD CODE HERE
+
+After finishing with this exercise, to deactivate the virtual environment run:
+```bash
+deactivate
+```
+
+To install the dependencies run:
+```bash
+pip install -r requirements.txt
+``

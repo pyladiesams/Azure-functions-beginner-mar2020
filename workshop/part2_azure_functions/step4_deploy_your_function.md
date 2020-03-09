@@ -8,6 +8,19 @@ impractical. Let's see how we can deploy the code we’ve written to Azure Funct
 
 To interact with Azure’s servers, we’ll use the Azure CLI command, `az`.
 
+I'm gonna show you how you can deploy your app using the Azure UI and from your command line.
+
+### Option 1: Azure UI
+
+From the Azure portal, click on Create a Resource and create a new Function App:
+
+<p>
+<img src="../images/deploy.png" align="center" height="50%" width="50%" />
+</p>
+
+Choose a unique name, select Linux as OS, choose to publish Code, and select Python as the Runtime Stack. 
+Once it’s deployed, go back to your command prompt.
+
 First you need to log into your Azure account by running `az login`. 
 It’ll load up the browser and ask you to log in to your Azure account. 
 
@@ -15,7 +28,34 @@ It’ll load up the browser and ask you to log in to your Azure account.
 # Connect `az` to your Azure account:
 az login
 ```
- 
+
+Install [Docker](https://docs.docker.com/install/) and make sure it is running, then run:
+
+```bash
+func azure functionapp publish APP_NAME --build-native-deps
+```
+
+where the APP_NAME is the name of the Function App you just created in Azure.
+
+To make sure everything works as expected, open Postman again and just replace the endpoint with the invoke URL provided after deployment 
+(with the code parameter, otherwise you’ll get an Unauthorized Access error).
+
+<p>
+<img src="../images/deploy_req.png" align="center" height="50%" width="50%" />
+</p>
+
+Now we can use this Python function anywhere!
+
+### Option 2: Command line
+
+First you need to log into your Azure account by running `az login`. 
+It’ll load up the browser and ask you to log in to your Azure account. 
+
+```bash
+# Connect `az` to your Azure account:
+az login
+```
+
 Now, you’ll run the three az commands below. 
 The only thing you’ll need to change is to replace `MYAPPFUNCTIONSTORE` with something globally unique. 
 The actual name you pick isn’t important – it’s just a place to store the data for your running functions, and won’t be seen by the users. 
@@ -45,7 +85,16 @@ You can check that your function is deployed properly by creating a POST reguest
 and confirming that the JSON output is being correctly produced.
 
 ### Troubleshooting
-Add monitoring screenshots...
+To troubleshoot your app go to the Monitoring section in the Azure portal.
+
+<p>
+<img src="../images/postman.png" align="center" height="50%" width="50%" />
+</p>
+
+## Cleaning up
+Don't forget to delete the created resource after the workshop ends. You can delete the resource by using the Azure portal.
+Go to Resource Groups, click on the resource you want to delete and click delete resource group.
+
 
 ## Where to go next?
 Now that you’re here, you’ve successfully written your first Python Azure function and can understand what happens when the function works according 

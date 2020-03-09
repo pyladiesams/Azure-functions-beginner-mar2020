@@ -34,29 +34,36 @@ In your terminal run:
 
 ```bash
 git clone https://github.com/pyladiesams/Azure-functions-beginner-mar2020
-cd Azure-functions-beginner-mar2020
+cd Azure-functions-beginner-mar2020/workshop/part2_azure_functions
 ```
 
 #### Let's create a virtual environment.
 In your terminal run:
 
+Mac & Ubuntu:
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 ```
+
+Windows:
+ADD CODE HERE
 
 #### Let's create a new Azure Functions project.
 
 We'll create a new Azure Functions project using the `Azure Functions Core Tools` command, `func`. Run `func init` to create an empty Azure Functions project:
 
 ```bash
-func init PythonHTTPExample
+func init FunctionPythonHTTPExample
 ```
 
-Use the up/down arrow keys to choose '3' (Python) as worker runtime, and then press Enter.
+Choose '3' (Python) as worker runtime, and then press Enter.
 
 If it happens according to the gif below it is because the project was installed successfully!
-ADD GIF
+
+<p>
+<img src="../images/creare_folder.gif" align="center" height="50%" width="50%" />
+</p>
 
 #### Let's create a new Azure Functions template.
 
@@ -73,7 +80,9 @@ to choose a name for your function.
 For the type of function, select ‘5’ (HTTP trigger) and name the function `response_text_processing`.
 
 If it happens according to the gif below it is because the project was installed successfully!
-ADD GIF
+<p>
+<img src="../images/creare_function.gif" align="center" height="50%" width="50%" />
+</p>
 
 And… Congrats! You have now created a new Azure function, and you can already test what the HTTP trigger template does.
 You can see from the output above that `func` has created a Python file, `__init__.py` and a config file, `function.json`.
@@ -86,7 +95,9 @@ func host start
 ```
 
 Look at the gif:
-ADD GIF
+<p>
+<img src="../images/host_start.gif" align="center" height="50%" width="50%" />
+</p>
 
 If you load up your browser at the URL `http://localhost:7071/api/response_text_processing?name="insert your name here"` 
 you should see “Hello "your name"!”.
