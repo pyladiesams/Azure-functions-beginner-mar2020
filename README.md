@@ -8,17 +8,17 @@
 ## Project description
 
 What you'll learn:
-* Enough terminology and concepts to be able to read other Azure Functions resources without being perpetually confused
-* A painless way to get Azure Functions running on your computer
-* How to get started with Azure Functions in Python
-* How to properly structure & refactore your Python code, so you can migrate your application to the cloud 
-* Helpful external resources for the material covered here
+* Enough terminology and concepts to be able to read other Azure Functions resources without being perpetually confused.
+* A painless way to get Azure Functions running on your computer.
+* How to get started with Azure Functions in Python.
+* How to properly structure & refactore your Python code, so you can migrate your application to the cloud.
+* Helpful external resources for the material covered here.
 
 By the end of this workshop, you’ll be ready to start integrating other Azure frameworks using Python Azure Functions. 
 
 ## Setup:
 
-### Set up a Python 3.
+### Set up Python 3.
 Azure Functions supports Python 3.6.x or higher.
 If you have a lower version, you have to update it.
 To install Python you need to download an installer:
