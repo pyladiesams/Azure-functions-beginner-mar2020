@@ -88,7 +88,7 @@ func host start
 Then go to Postman and make the following POST request using the [data_sample]() file:
 
 <p>
-<img src="../images/postman.png" align="center" height="50%" width="50%" />
+<img src="images/postman.png" align="center"/>
 </p>
 
 In the response the stopwords should have been removed, then the text should have been tagged and finally there should be a few recognized entities.
