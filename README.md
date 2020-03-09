@@ -3,7 +3,7 @@
     <p>Level: Beginner</p>
 </div>
 
-### Presentation: ADD LINK HERE
+### Presentation: [DOWNLOAD IT HERE](https://github.com/pyladiesams/Azure-functions-beginner-mar2020/tree/solutions/workshop/presentation_slides)
 
 ## Project description
 
@@ -22,7 +22,7 @@ By the end of this workshop, you’ll be ready to start integrating other Azure 
 Azure Functions supports Python 3.6.x or higher.
 If you have a lower version, you have to update it.
 To install Python you need to download an installer:
-* Windows(https://www.python.org/downloads/windows/)
+* Windows: https://www.python.org/downloads/windows/
 * Linux, Mac already has to have Python3, if you're not sure, type in command line:
 `python --version` or `python3 --version`
 and version will be in a first line. If you don't have proper version of python:
@@ -53,7 +53,7 @@ wget -q https://packages.microsoft.com/config/ubuntu/18.10/packages-microsoft-pr
 sudo dpkg -i packages-microsoft-prod.deb
 ```
 
-### Install [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
+### Install [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest).
 Follow the instructions [here](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest).
 
 ### Set up a [free Azure account]((https://azure.microsoft.com/en-gb/)).
@@ -66,7 +66,7 @@ Follow the instructions [here](https://docs.microsoft.com/en-us/cli/azure/instal
 
 ## Usage
 * Clone the repository.
-* Go to [workshop]() and start with the README.md.
+* Go to [workshop](https://github.com/pyladiesams/Azure-functions-beginner-mar2020/tree/solutions/workshop) and start with the README.md.
 
 ## Credits
 This workshop was set up by [@PyLadiesAMS](https://www.meetup.com/PyLadiesAMS/) and [Dana Arsovska](https://github.com/Dzvezdana).
