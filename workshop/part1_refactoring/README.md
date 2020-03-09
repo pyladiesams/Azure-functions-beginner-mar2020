@@ -3,7 +3,7 @@
 In this part of the workshop we'll learn basic ways in which we can improve code readability and usability. The example we'll use is in Python, but
 this is applicable to any programming language.
 
-Open the [text_processing]() file. Keeping in mind the single responsibility principle we've discussed during the presentation what improvements can be made?
+Open the [text_processing](https://github.com/pyladiesams/Azure-functions-beginner-mar2020/blob/solutions/workshop/part1_refactoring/text_processing.py) file. Keeping in mind the single responsibility principle we've discussed during the presentation what improvements can be made?
 
 Try to:
 
@@ -35,4 +35,4 @@ deactivate
 To install the dependencies run:
 ```bash
 pip install -r requirements.txt
-``
+```
