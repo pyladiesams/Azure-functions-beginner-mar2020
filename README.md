@@ -3,7 +3,7 @@
     <p>Level: Beginner</p>
 </div>
 
-### Presentation: [DOWNLOAD IT HERE](https://github.com/pyladiesams/Azure-functions-beginner-mar2020/tree/solutions/workshop/presentation_slides)
+### Presentation: [DOWNLOAD IT HERE](https://github.com/pyladiesams/Azure-functions-beginner-mar2020/tree/master/workshop/presentation_slides)
 
 ## Project description
 
@@ -56,7 +56,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 ### Install [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest).
 Follow the instructions [here](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest).
 
-### Set up a [free Azure account]((https://azure.microsoft.com/en-gb/)).
+### Set up a [free Azure account](https://azure.microsoft.com/en-gb/).
  
 ### Install [Postman](https://www.postman.com/).
 
@@ -66,7 +66,7 @@ Follow the instructions [here](https://docs.microsoft.com/en-us/cli/azure/instal
 
 ## Usage
 * Clone the repository.
-* Go to [workshop](https://github.com/pyladiesams/Azure-functions-beginner-mar2020/tree/solutions/workshop) and start with the README.md.
+* Go to [workshop](https://github.com/pyladiesams/Azure-functions-beginner-mar2020/tree/master/workshop) and start with the README.md.
 
 ## Credits
 This workshop was set up by [@PyLadiesAMS](https://www.meetup.com/PyLadiesAMS/) and [Dana Arsovska](https://github.com/Dzvezdana).
