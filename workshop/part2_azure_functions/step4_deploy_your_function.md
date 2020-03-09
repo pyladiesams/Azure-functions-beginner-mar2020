@@ -88,7 +88,7 @@ and confirming that the JSON output is being correctly produced.
 To troubleshoot your app go to the Monitoring section in the Azure portal.
 
 <p>
-<img src="images/postman.png" align="center"/>
+<img src="images/monitoring.png" align="center"/>
 </p>
 
 ## Cleaning up
