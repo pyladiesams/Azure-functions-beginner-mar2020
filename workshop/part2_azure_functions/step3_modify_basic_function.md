@@ -1,7 +1,7 @@
 ### Step 3: Modify the basic Azure Function.
 
-In this step we'll learn how we can modify our basic Azure Function using the code we prepared in step1_refactoring. Since there is more than one way to 
-correctly refactor code I prepared a simple Python function in the shared_code directory we can all use.
+In this step we'll learn how we can modify our basic Azure Function using the code we prepared in [part1_refactoring](https://github.com/pyladiesams/Azure-functions-beginner-mar2020/tree/master/workshop/part1_refactoring). Since there is more than one way to 
+correctly refactor code I prepared a simple Python function in the [shared_code](https://github.com/pyladiesams/Azure-functions-beginner-mar2020/tree/master/workshop/part2_azure_functions/shared_code) directory we can all use.
 
 As a challenge after finishing this step, try to deploy more functions we created in the refactoring step and create tests.
 
@@ -23,9 +23,9 @@ pip freeze > requirements.txt
 
 to keep a record of the libraries you’ve installed in this environment. This is the file that we will use when we publish our Functions project.
 
-The [shared_code directory](https://github.com/pyladiesams/Azure-functions-beginner-mar2020/tree/solutions/workshop/part2_azure_functions/shared_code) contains functions that preform simple Natural Language Processing, which we gonna use in our `response_text_processing` function.
+The [shared_code directory](https://github.com/pyladiesams/Azure-functions-beginner-mar2020/tree/master/workshop/part2_azure_functions/shared_code) contains functions that preform simple Natural Language Processing, which we gonna use in our `response_text_processing` function.
 
-Move the [shared_code directory](https://github.com/pyladiesams/Azure-functions-beginner-mar2020/tree/solutions/workshop/part2_azure_functions/shared_code) to your FunctionPythonHTTPExample folder.
+Move the [shared_code directory](https://github.com/pyladiesams/Azure-functions-beginner-mar2020/tree/master/workshop/part2_azure_functions/shared_code) to your FunctionPythonHTTPExample folder.
 
 ```bash
 cd ~/Azure-functions-beginner-mar2020/workshop/part2_azure_functions
@@ -85,7 +85,7 @@ cd ~/Azure-functions-beginner-mar2020/workshop/part2_azure_functions/FunctionPyt
 func host start
 ```
 
-Then go to Postman and make the following POST request using the [data_sample]() file:
+Then go to Postman and make the following POST request using the [data_sample](https://github.com/pyladiesams/Azure-functions-beginner-mar2020/blob/master/workshop/part2_azure_functions/data/data_sample.txt) file:
 
 <p>
 <img src="images/postman.png" align="center"/>
