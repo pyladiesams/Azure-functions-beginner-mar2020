@@ -62,7 +62,7 @@ Choose '3' (Python) as worker runtime, and then press Enter.
 If it happens according to the gif below it is because the project was installed successfully!
 
 <p>
-<img src="images/creare_folder.gif" align="center">
+<img src="images/create_folder.gif" align="center">
 </p>
 
 #### Let's create a new Azure Functions template.
@@ -81,7 +81,7 @@ For the type of function, select ‘5’ (HTTP trigger) and name the function `r
 
 If it happens according to the gif below it is because the project was installed successfully!
 <p>
-<img src="images/creare_function.gif" align="center">
+<img src="images/create_function.gif" align="center">
 </p>
 
 And… Congrats! You have now created a new Azure function, and you can already test what the HTTP trigger template does.
