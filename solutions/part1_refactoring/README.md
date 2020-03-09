@@ -35,4 +35,4 @@ deactivate
 To install the dependencies run:
 ```bash
 pip install -r requirements.txt
-``
+```
