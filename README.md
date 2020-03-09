@@ -60,6 +60,7 @@ Follow the instructions [here](https://docs.microsoft.com/en-us/cli/azure/instal
  
 ### Install [Postman](https://www.postman.com/).
 
+### Install [Docker](https://docs.docker.com/install/) and make sure it is running.
 
 ## Requirements
 * Python 3.6.x or higher.
