@@ -37,12 +37,12 @@ python -m venv .venv
 .venv\Scripts\Activate.ps1 
 ```
 
-After finishing with this exercise, to deactivate the virtual environment run:
-```bash
-deactivate
-```
-
 To install the dependencies run:
 ```bash
 pip install -r requirements.txt
+```
+
+After finishing with this exercise, to deactivate the virtual environment run:
+```bash
+deactivate
 ```
