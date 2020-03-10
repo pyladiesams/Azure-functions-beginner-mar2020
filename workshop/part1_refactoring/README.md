@@ -18,13 +18,13 @@ Try to:
 #### Let's create a virtual environment.
 In your terminal run:
 
-Mac & Ubuntu:
+**Mac & Ubuntu:**
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-Windows:\
+**Windows:**\
 If you use `cmd`:
 ```bash
 <venv> \Scripts\activate.bat 
