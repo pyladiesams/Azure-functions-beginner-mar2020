@@ -40,13 +40,13 @@ cd Azure-functions-beginner-mar2020/workshop/part2_azure_functions
 #### Let's create a virtual environment.
 In your terminal run:
 
-Mac & Ubuntu:
+*Mac & Ubuntu:*
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-Windows:\
+*Windows:*\
 If you use `cmd`:
 ```bash
 <venv> \Scripts\activate.bat 

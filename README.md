@@ -48,7 +48,7 @@ Notice: To debug functions under vscode, x64 bitness is required: ```choco insta
 Using `npm`:\
 Set up [npm](https://treehouse.github.io/installation-guides/mac/node-mac.html). In your terminal run: ```npm install -g azure-functions-core-tools```
 
-Using `brew`:\
+Using `brew`:
 
 ``` 
 brew tap azure/functions 
