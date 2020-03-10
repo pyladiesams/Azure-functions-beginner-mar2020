@@ -66,7 +66,7 @@ You’ll also need to change `MYFIRSTAPP` to something globally unique.
 az group create --name myResourceGroup --location westeurope
 
 # Create a storage account for storing your function data:
-az storage account create --name "MYAPPFUNCTIONSTORE"" \
+az storage account create --name "MYAPPFUNCTIONSTORE" \
     --location westeurope --resource-group myResourceGroup \
     --sku Standard_LRS
 
