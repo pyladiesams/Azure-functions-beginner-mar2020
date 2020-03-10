@@ -94,7 +94,10 @@ To troubleshoot your app go to the Monitoring section in the Azure portal.
 ## Cleaning up
 Don't forget to delete the created resource after the workshop ends. You can delete the resource by using the Azure portal.
 Go to Resource Groups, click on the resource you want to delete and click delete resource group.
-
+Or by using Azure CLI, just run the following command in the terminal: 
+```bash
+az group delete --name MyResourceGroup
+```
 
 ## Where to go next?
 Now that you’re here, you’ve successfully written your first Python Azure function and can understand what happens when the function works according 
