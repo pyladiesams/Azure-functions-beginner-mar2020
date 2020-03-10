@@ -34,8 +34,8 @@ In your terminal run:
 
 ```bash
 git clone https://github.com/pyladiesams/Azure-functions-beginner-mar2020
-cd Azure-functions-beginner-mar2020/workshop/part2_azure_functions
 ```
+Go to the folder Azure-functions-beginner-mar2020/workshop/part2_azure_functions
 
 #### Let's create a virtual environment.
 In your terminal run:
@@ -49,12 +49,14 @@ source .venv/bin/activate
 **Windows:**\
 If you use `cmd`:
 ```bash
-<venv> \Scripts\activate.bat 
+python -m venv .venv
+.venv\Scripts\activate.bat 
 ```
 
 If you use `PowerShell`:
 ```bash
-<venv> \Scripts\Activate.ps1 
+python -m venv .venv
+.venv\Scripts\Activate.ps1 
 ```
 
 #### Let's create a new Azure Functions project.
@@ -111,3 +113,5 @@ If you load up your browser at the URL `http://localhost:7071/api/response_text_
 you should see “Hello "your name"!”.
 
 Well done! You’ve written your first Azure Function!
+
+To stop the execution press CTRL+C while being in the terminal.
