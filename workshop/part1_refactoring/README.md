@@ -27,12 +27,14 @@ source .venv/bin/activate
 **Windows:**\
 If you use `cmd`:
 ```bash
-<venv> \Scripts\activate.bat 
+python -m venv .venv
+.venv\Scripts\activate.bat 
 ```
 
 If you use `PowerShell`:
 ```bash
-<venv> \Scripts\Activate.ps1 
+python -m venv .venv
+.venv\Scripts\Activate.ps1 
 ```
 
 After finishing with this exercise, to deactivate the virtual environment run:
