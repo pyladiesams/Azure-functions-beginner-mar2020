@@ -37,11 +37,15 @@ To install Azure Functions Core Tools use:
 
 * Windows: 
 
-In your terminal run: ```npm i -g azure-functions-core-tools@2 --unsafe-perm true```
+To install runtime with [npm](https://phoenixnap.com/kb/install-node-js-npm-on-windows) in your terminal run: ```npm i -g azure-functions-core-tools@2 --unsafe-perm true```
+
+To install with [chocolatey](https://chocolatey.org/docs/installation): ```choco install azure-functions-core-tools```
+
+Notice: To debug functions under vscode, x64 bitness is required: ```choco install azure-functions-core-tools --params "'/x64'"```
 
 * Mac:
 
-In your terminal run: ```npm install -g azure-functions-core-tools```
+Set up [npm](https://treehouse.github.io/installation-guides/mac/node-mac.html). In your terminal run: ```npm install -g azure-functions-core-tools```
 To verify that `Azure Functions Core Tools` is installed correctly on your machine, run the func command in your terminal: ```func```
 
 * Linux:
