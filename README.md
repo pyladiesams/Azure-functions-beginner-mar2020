@@ -19,7 +19,7 @@ By the end of this workshop, you’ll be ready to start integrating other Azure 
 ## Setup:
 
 ### Set up Python 3.
-Azure Functions supports Python 3.6.x or higher.
+Azure Functions supports Python 3.6.x or 3.7.x.
 If you have a lower version, you have to update it.
 To install Python you need to download an installer:
 * Windows: https://www.python.org/downloads/windows/
@@ -45,7 +45,16 @@ Notice: To debug functions under vscode, x64 bitness is required: ```choco insta
 
 * Mac:
 
+Using `npm`:\
 Set up [npm](https://treehouse.github.io/installation-guides/mac/node-mac.html). In your terminal run: ```npm install -g azure-functions-core-tools```
+
+Using `brew`:\
+
+``` 
+brew tap azure/functions 
+brew install azure-functions-core-tools@2 
+```
+
 To verify that `Azure Functions Core Tools` is installed correctly on your machine, run the func command in your terminal: ```func```
 
 * Linux:
@@ -67,7 +76,7 @@ Follow the instructions [here](https://docs.microsoft.com/en-us/cli/azure/instal
 ### Install [Docker](https://docs.docker.com/install/) and make sure it is running.
 
 ## Requirements
-* Python 3.6.x or higher.
+* Python 3.6.x or 3.7.x.
 
 ## Usage
 * Clone the repository.

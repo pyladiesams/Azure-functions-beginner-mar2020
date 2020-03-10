@@ -24,8 +24,16 @@ python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-Windows:
-ADD CODE HERE
+Windows:\
+If you use `cmd`:
+```bash
+<venv> \Scripts\activate.bat 
+```
+
+If you use `PowerShell`:
+```bash
+<venv> \Scripts\Activate.ps1 
+```
 
 After finishing with this exercise, to deactivate the virtual environment run:
 ```bash
