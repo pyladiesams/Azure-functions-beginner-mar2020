@@ -10,4 +10,4 @@ six==1.14.0
 soupsieve==2.0
 textsearch==0.0.17
 Unidecode==1.1.1
-zipp==3.1.0
+zipp==3.19.1
