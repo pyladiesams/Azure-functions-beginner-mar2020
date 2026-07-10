@@ -7,7 +7,7 @@ nltk==3.9.4
 numpy==1.22.0
 pyahocorasick==1.4.0
 six==1.14.0
-soupsieve==2.0
+soupsieve==2.8.4
 textsearch==0.0.17
 Unidecode==1.1.1
 zipp==3.19.1
